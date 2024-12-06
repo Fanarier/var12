@@ -1,5 +1,5 @@
-prices = (1200, 800, 1500, 2000, 700, 3000, 400, 1100, 900, 500, 1300, 1800)
+distances = (50, 200, 30, 400, 600, 120, 20, 300, 100, 70, 90, 150, 250, 80, 40)
 
-total_cost = sum(price for price in prices if price > 1000)
+min_distance = min(distances)
+print(f"Минимальное расстояние от Москвы: {min_distance}")
 
-print("Общая стоимость товаров дороже 1000 рублей:", total_cost)
