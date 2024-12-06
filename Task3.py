@@ -1,6 +1,9 @@
-numbers = [10, 15, 20, 25, 30, 35, 40, 45]
+numbers = [1, 2, 3, 4, 5]
+k = 2  # Индекс
+C = 99  # Значение
 
-print("Четные элементы списка:")
-for num in numbers:
-    if num % 2 == 0:
-        print(num)
+numbers.insert(k, C)
+print("Список после вставки:", numbers)
+
+numbers.append(10)
+print("Список после добавления элемента в конец:", numbers)
