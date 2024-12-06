@@ -1,9 +1,14 @@
-list1 = [1, 2, 3, 4, 5]
-list2 = [4, 5, 6, 7, 8]
+def superset(set1, set2):
+    if set1 == set2:
+        print("Множества равны")
+    elif set1 > set2:
+        print(f"Объект {set1} является чистым супермножеством")
+    elif set2 > set1:
+        print(f"Объект {set2} является чистым супермножеством")
+    else:
+        print("Супермножество не обнаружено")
 
-set1 = set(list1)
-set2 = set(list2)
-
-common_elements = set1 & set2
-
-print("Количество общих чисел:", len(common_elements))
+# Пример
+set1 = {1, 2, 3, 4}
+set2 = {2, 3}
+superset(set1, set2)
