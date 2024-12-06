@@ -1,13 +1,9 @@
-synonyms = {
-    "быстрый": "скорый",
-    "медленный": "неторопливый",
-    "умный": "разумный",
-    "глупый": "тупой"
-}
+cats = [
+    ("Барсик", 2, "Иван", "Иванов"),
+    ("Мурка", 3, "Петр", "Петров"),
+    ("Снежок", 1, "Анна", "Сидорова"),
+]
 
-word = "умный"
-
-if word in synonyms:
-    print("Синоним для слова", word, ":", synonyms[word])
-else:
-    print("Слово не найдено в словаре.")
+for cat in cats:
+    name, age, owner_first_name, owner_last_name = cat
+    print(f"Кличка: {name}, Возраст: {age}, Владелец: {owner_first_name} {owner_last_name}")
